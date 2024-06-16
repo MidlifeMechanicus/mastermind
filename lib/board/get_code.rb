@@ -19,7 +19,6 @@ module GetCode
   when 6
     self.code[1] = "purple"
   end
-  p self.code[1]
 
   case random2
   when 1
@@ -35,7 +34,6 @@ module GetCode
   when 6
     self.code[2] = "purple"
   end
-  p self.code[2]
 
   case random3
   when 1
@@ -51,7 +49,6 @@ module GetCode
   when 6
     self.code[3] = "purple"
   end
-  p self.code[3]
 
   case random4
   when 1
@@ -67,8 +64,6 @@ module GetCode
   when 6
     self.code[4] = "purple"
   end
-  p self.code[4]
-
   end
 end
 
