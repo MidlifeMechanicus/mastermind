@@ -18,29 +18,29 @@ module GetChoices
     end
     case self.turn
     when 1
-      self.round1 << choices
+      self.round1.concat(choices)
     when 2
-      self.round2 << choices
+      self.round2.concat(choices)
     when 3
-      self.round3 << choices
+      self.round3.concat(choices)
     when 4
-      self.round4 << choices
+      self.round4.concat(choices)
     when 5
-      self.round5 << choices
+      self.round5.concat(choices)
     when 6
-      self.round6 << choices
+      self.round6.concat(choices)
     when 7
-      self.round7 << choices
+      self.round7.concat(choices)
     when 8
-      self.round8 << choices
+      self.round8.concat(choices)
     when 9
-      self.round9 << choices
+      self.round9.concat(choices)
     when 10
-      self.round10 << choices
+      self.round10.concat(choices)
     when 11
-      self.round11 << choices
+      self.round11.concat(choices)
     when 12
-      self.round12 << choices
+      self.round12.concat(choices)
     end
   end
 end

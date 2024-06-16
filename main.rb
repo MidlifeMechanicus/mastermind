@@ -8,6 +8,12 @@ require_relative "lib/board"
 
 new_board = Board.new
 
+p new_board.code
+
 new_board.get_choices
+
+p new_board.round1
+
+new_board.get_clue
 
 # puts "\nPlease enter your choices, from left to right.\n\nred = r\norange = o\nyellow = y\ngreen= g\nblue = b\npurple = p\n\nExample: royg"
