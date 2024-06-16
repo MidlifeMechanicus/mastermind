@@ -18,6 +18,7 @@ class Board
     @code = [" ", " ", " ", " "]
 
     show_board
+    get_code
   end
 
   attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code
