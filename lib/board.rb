@@ -2,6 +2,7 @@ require_relative "board/show_board"
 require_relative "board/get_code"
 require_relative "board/get_choices"
 require_relative "board/get_clue"
+require_relative "board/test_function"
 
 class Board
   def initialize
@@ -31,5 +32,6 @@ class Board
   include GetCode
   include GetChoices
   include GetClue
+  include TestFunction
 
 end

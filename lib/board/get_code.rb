@@ -1,7 +1,7 @@
 module GetCode
   def get_code
     random0 = rand(1..6)
-    random1 = rand (1..6)
+    random1 = rand(1..6)
     random2 = rand(1..6)
     random3 = rand(1..6)
 
