@@ -18,6 +18,7 @@ module GetChoices
     end
     case self.turn
     when 1
+      self.round1 = []
       self.round1.concat(choices)
     when 2
       self.round2.concat(choices)

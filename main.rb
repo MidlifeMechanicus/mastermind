@@ -10,8 +10,10 @@ new_board = Board.new
 
 p new_board.code
 
-# new_board.test_function new_board.code
-
 new_board.get_choices
  
 new_board.get_clue new_board.round1
+
+new_board.format_data new_board.round1
+
+new_board.show_board

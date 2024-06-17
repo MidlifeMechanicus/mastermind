@@ -6,7 +6,7 @@ module GetClue
     p choices_working_copy
     for i in 0..3
       if choices_working_copy[i] == code_working_copy[i]
-        round << "k"
+        round << "w"
         choices_working_copy[i] = "x"
         code_working_copy[i] = "z"
       end
@@ -15,7 +15,7 @@ module GetClue
     for i in 0..3 do
       for j in 0..3 do
         if choices_working_copy[i] == code_working_copy[j]
-          round << "w"
+          round << "e"
           choices_working_copy[i] = "x"
           code_working_copy[j] = "z"
         end

@@ -2,11 +2,11 @@ require_relative "board/show_board"
 require_relative "board/get_code"
 require_relative "board/get_choices"
 require_relative "board/get_clue"
-require_relative "board/test_function"
+require_relative "board/format_data"
 
 class Board
   def initialize
-    @round1 = []
+    @round1 = [" ", " ", " ", " ", " ", " ", " ", " "]
     @round2 = []
     @round3 = []
     @round4 = []
@@ -32,6 +32,6 @@ class Board
   include GetCode
   include GetChoices
   include GetClue
-  include TestFunction
+  include FormatData
 
 end
