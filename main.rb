@@ -1,13 +1,16 @@
+require_relative "lib/get_mode"
 require_relative "lib/board"
+
+include GetMode
 # Need instructions!
 # Reveal choices at end
 # Refactor?
 
+get_mode
 
+#new_board = Board.new
 
-new_board = Board.new
-
-new_board.play_game
+#new_board.play_game
 
 # p new_board.code
 # 

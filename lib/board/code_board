@@ -1,0 +1,7 @@
+class CodeBoard < Board
+  def code_board
+  end
+end
+
+# need a way to track computer guesses and logic
+# delay steps?
