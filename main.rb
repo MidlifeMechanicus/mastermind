@@ -9,14 +9,16 @@ require_relative "lib/board"
 
 new_board = Board.new
 
-p new_board.code
+new_board.play_game
 
-new_board.get_choices
- 
-new_board.get_clue new_board.round1
-
-new_board.format_data new_board.round1
-
-new_board.show_board
+# p new_board.code
+# 
+# new_board.get_choices
+#  
+# new_board.get_clue new_board.round1
+# 
+# new_board.format_data new_board.round1
+# 
+# new_board.show_board
 
 # puts "\n======= MASTERMIND =======\n| ? || ? || ? || ? ||CLUE|\n==========================\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n=========================="
