@@ -1,3 +1,4 @@
+require_relative "board/show_instructions"
 require_relative "board/show_board"
 require_relative "board/get_code"
 require_relative "board/get_choices"
@@ -24,6 +25,7 @@ class Board
     @turn = 0
     @winner = false
 
+    show_instructions
     show_board
     get_code
   end
@@ -31,6 +33,7 @@ class Board
 
   attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code, :turn, :winner
 
+  include ShowInstructions
   include ShowBoard
   include GetCode
   include GetChoices

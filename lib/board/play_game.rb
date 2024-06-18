@@ -36,7 +36,8 @@ module PlayGame
       get_clue self.round5
       format_data self.round5
       show_board
-      check_win self.round5end
+      check_win self.round5
+    end
 
     if winner == false
       get_choices
@@ -94,5 +95,4 @@ module PlayGame
       check_win self.round12
     end  
   end
-end
 end

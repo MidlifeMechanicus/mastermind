@@ -1,9 +1,7 @@
 require_relative "lib/board"
-# Need to complete board variables
 # Need instructions!
-# Need function to check for winner
-# Implement consecutive rounds (ply game?)
-# Where to put req rel statements?
+# Reveal choices at end
+# Refactor?
 
 
 
