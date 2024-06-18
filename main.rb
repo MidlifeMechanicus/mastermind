@@ -1,10 +1,11 @@
 require_relative "lib/board"
-# Will need board
-# Will need target array and 12 guess arrays and 12 feedback arrays with logic
-# Will have to implement 6 colors!
-# Will need instructions!
+# Need to complete board variables
+# Need instructions!
+# Need function to check for winner
+# Implement consecutive rounds (ply game?)
+# Where to put req rel statements?
 
-# puts "\n======= MASTERMIND =======\n| ? || ? || ? || ? ||CLUE|\n==========================\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n=========================="
+
 
 new_board = Board.new
 
@@ -17,3 +18,5 @@ new_board.get_clue new_board.round1
 new_board.format_data new_board.round1
 
 new_board.show_board
+
+# puts "\n======= MASTERMIND =======\n| ? || ? || ? || ? ||CLUE|\n==========================\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n|   ||   ||   ||   ||    |\n=========================="
