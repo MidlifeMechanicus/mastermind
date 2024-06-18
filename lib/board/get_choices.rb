@@ -21,26 +21,37 @@ module GetChoices
       self.round1 = []
       self.round1.concat(choices)
     when 2
+      self.round2 = []
       self.round2.concat(choices)
     when 3
+      self.round3 = []
       self.round3.concat(choices)
     when 4
+      self.round4 = []
       self.round4.concat(choices)
     when 5
+      self.round5 = []
       self.round5.concat(choices)
     when 6
+      self.round6 = []
       self.round6.concat(choices)
     when 7
+      self.round7 = []
       self.round7.concat(choices)
     when 8
+      self.round8 = []
       self.round8.concat(choices)
     when 9
+      self.round9 = []
       self.round9.concat(choices)
     when 10
+      self.round10 = []
       self.round10.concat(choices)
     when 11
+      self.round11 = []
       self.round11.concat(choices)
     when 12
+      self.round12 = []
       self.round12.concat(choices)
     end
   end

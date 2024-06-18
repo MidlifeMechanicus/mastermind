@@ -3,7 +3,7 @@ module ShowBoard
     puts "\n======= MASTERMIND =======\
     \n| ? || ? || ? || ? ||CLUE|\n==========================\
     \n| #{self.round12[0]} || #{self.round12[1]} || #{self.round12[2]} || #{self.round12[3]} ||#{self.round12[4]}#{self.round12[5]}#{self.round12[6]}#{self.round12[7]}|\
-    \n| #{self.round11[0]} || #{self.round11[1]} || #{self.round11[2]} || #{self.round11[3]} ||#{self.round11[4]}#{self.round11[5]}#{self.round1[6]}#{self.round11[7]}|\
+    \n| #{self.round11[0]} || #{self.round11[1]} || #{self.round11[2]} || #{self.round11[3]} ||#{self.round11[4]}#{self.round11[5]}#{self.round11[6]}#{self.round11[7]}|\
     \n| #{self.round10[0]} || #{self.round10[1]} || #{self.round10[2]} || #{self.round10[3]} ||#{self.round10[4]}#{self.round10[5]}#{self.round10[6]}#{self.round10[7]}|\
     \n| #{self.round9[0]} || #{self.round9[1]} || #{self.round9[2]} || #{self.round9[3]} ||#{self.round9[4]}#{self.round9[5]}#{self.round9[6]}#{self.round9[7]}|\
     \n| #{self.round8[0]} || #{self.round8[1]} || #{self.round8[2]} || #{self.round8[3]} ||#{self.round8[4]}#{self.round8[5]}#{self.round8[6]}#{self.round8[7]}|\

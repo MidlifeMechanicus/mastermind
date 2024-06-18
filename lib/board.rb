@@ -22,13 +22,14 @@ class Board
     @round12 = [" ", " ", " ", " ", " ", " ", " ", " "]
     @code = []
     @turn = 0
+    @winner = false
 
     show_board
     get_code
   end
   # Need get_choices, get_results and convert_results (map?)
 
-  attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code, :turn
+  attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code, :turn, :winner
 
   include ShowBoard
   include GetCode
