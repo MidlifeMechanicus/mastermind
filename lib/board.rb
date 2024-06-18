@@ -3,6 +3,7 @@ require_relative "board/get_code"
 require_relative "board/get_choices"
 require_relative "board/get_clue"
 require_relative "board/format_data"
+require_relative "board/check_win"
 require_relative "board/play_game"
 
 class Board
@@ -34,6 +35,7 @@ class Board
   include GetChoices
   include GetClue
   include FormatData
+  include CheckWin
   include PlayGame
 
 end
