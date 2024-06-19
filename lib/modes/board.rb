@@ -21,7 +21,7 @@ class Board
     @round11 = [" ", " ", " ", " ", " ", " ", " ", " "]
     @round12 = [" ", " ", " ", " ", " ", " ", " ", " "]
     @code = []
-    @code_display = ["#", "#", "#", "#"]
+    @code_display = ["?", "?", "?", "?"]
     @turn = 0
     @winner = false
 

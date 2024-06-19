@@ -1,7 +1,8 @@
 module ShowBoard
   def show_board
     puts "\n======= MASTERMIND =======\
-    \n| ? || ? || ? || ? ||CLUE|\n==========================\
+    \n| #{self.code_display[0]} || #{self.code_display[1]} || #{self.code_display[2]} || #{self.code_display[3]} ||CLUE|\
+    \n==========================\
     \n| #{self.round12[0]} || #{self.round12[1]} || #{self.round12[2]} || #{self.round12[3]} ||#{self.round12[4]}#{self.round12[5]}#{self.round12[6]}#{self.round12[7]}|\
     \n| #{self.round11[0]} || #{self.round11[1]} || #{self.round11[2]} || #{self.round11[3]} ||#{self.round11[4]}#{self.round11[5]}#{self.round11[6]}#{self.round11[7]}|\
     \n| #{self.round10[0]} || #{self.round10[1]} || #{self.round10[2]} || #{self.round10[3]} ||#{self.round10[4]}#{self.round10[5]}#{self.round10[6]}#{self.round10[7]}|\
