@@ -5,9 +5,8 @@ class CodeBoard < Board
   def initialize
     super
     puts "this is your code board"
-    p self.round1
-    #choose_code
-    #show_board
+    choose_code
+    show_board
   end
 
   include ChooseCode

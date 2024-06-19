@@ -25,7 +25,7 @@ class Board
     @turn = 0
     @winner = false
 
-    show_board
+    # show_board
     # get_code
   end
   # Need get_choices, get_results and convert_results (map?)
