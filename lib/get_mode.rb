@@ -1,3 +1,6 @@
+require_relative "modes/board"
+require_relative "modes/board/code_board"
+
 module GetMode
   def get_mode
     puts "\nMastermind is a code breaking game. A sequence of up to four colours is selected by the Chooser, and Guesser tries to work out the sequence."
@@ -10,7 +13,7 @@ module GetMode
 
     while choice_valid == false
 
-      puts "\nWould you like to GUESS or the CHOOSE?"
+      puts "\nWould you like to GUESS the code or the CHOOSE the code?"
       
       response = gets.chomp.downcase
       if response == "guess"
@@ -19,6 +22,8 @@ module GetMode
       elsif response == "choose"
       choice_valid = true
       puts "You selected CHOOSE."
+      new_board = CodeBoard.new
+      p new_board
       else
         puts "That is not a valid selection. Please try again."
       end

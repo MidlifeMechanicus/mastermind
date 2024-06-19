@@ -1,12 +1,18 @@
 require_relative "lib/get_mode"
-require_relative "lib/board"
+require_relative "lib/modes/board"
+require_relative "lib/modes/board/code_board"
+# This one is temporary for testing
 
 include GetMode
-# Need instructions!
 # Reveal choices at end
 # Refactor?
 
-get_mode
+# get_mode
+# Will need the above after testing
+
+new_board = CodeBoard.new
+
+# next_board = Board.new
 
 #new_board = Board.new
 
