@@ -12,6 +12,19 @@ include GetMode
 
 new_board = CodeBoard.new
 
+new_board.play_code_round new_board.round1
+new_board.play_code_round new_board.round2
+new_board.play_code_round new_board.round3
+new_board.play_code_round new_board.round4
+new_board.play_code_round new_board.round5
+new_board.play_code_round new_board.round6
+new_board.play_code_round new_board.round7
+new_board.play_code_round new_board.round8
+new_board.play_code_round new_board.round9
+new_board.play_code_round new_board.round10
+new_board.play_code_round new_board.round11
+new_board.play_code_round new_board.round12
+
 # next_board = Board.new
 
 #new_board = Board.new

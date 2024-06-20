@@ -1,16 +1,19 @@
 require_relative "code_board/choose_code"
-require_relative "show_board"
+require_relative "code_board/play_code_round"
 
 class CodeBoard < Board
   def initialize
     super
+    @correct_guesses = ["?", "?", "?", "?"]
     puts "this is your code board"
     choose_code
     show_board
   end
 
+  attr_accessor :correct_guesses
+
   include ChooseCode
-  include ShowBoard
+  include PlayCodeRound
 end
 
 # need a way to track computer guesses and logic
