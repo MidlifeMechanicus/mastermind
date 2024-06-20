@@ -6,7 +6,6 @@ class CodeBoard < Board
     super
     @correct_guesses = ["?", "?", "?", "?"]
     @guesser = "computer"
-    puts "this is your code board"
     choose_code
     show_board
   end
@@ -16,6 +15,3 @@ class CodeBoard < Board
   include ChooseCode
   include PlayCodeRound
 end
-
-# need a way to track computer guesses and logic
-# delay steps?

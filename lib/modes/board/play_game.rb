@@ -2,7 +2,9 @@ module PlayGame
   def play_game
     game_rounds = [self.round1, self.round2, self.round3, self.round4, self.round5, self.round6, self.round7, self.round8, self.round9, self.round10, self.round11, self.round12]
 
-    if self.guesser = "computer"
+    p self.guesser
+
+    if self.guesser == "computer"
       game_rounds.each do |n|
         play_code_round n
         if self.winner == true
@@ -18,6 +20,11 @@ module PlayGame
        puts "\nThe computer could not break your code. Well done! You win!"
       end
     end
+# 
+    if self.guesser == "player"
+      play_guess_round game_rounds[1]
+    end
+
 
 
     #play_code_round game_rounds[0]
