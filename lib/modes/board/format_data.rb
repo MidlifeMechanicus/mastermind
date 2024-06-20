@@ -23,6 +23,5 @@ module FormatData
     while round.length <8
       round << " "
     end
-    p round
   end
 end

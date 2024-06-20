@@ -48,7 +48,7 @@ module PlayCodeRound
     end
 
      format_data round
-     self.show_board
+     # self.show_board
      check_win round
 
   end

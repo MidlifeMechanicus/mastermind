@@ -1,7 +1,6 @@
 module PlayGame
   def play_game
     game_rounds = [self.round1, self.round2, self.round3, self.round4, self.round5, self.round6, self.round7, self.round8, self.round9, self.round10, self.round11, self.round12]
-    p game_rounds
 
     game_rounds.each do |n|
       play_code_round n
@@ -10,10 +9,12 @@ module PlayGame
       end
     end
 
+    self.show_board
+
     if self.winner == true
-     puts "The computer successfully broke your code! Better luck next time!"
+     puts "\nThe computer successfully broke your code! Better luck next time!"
     else
-     puts "The computer could not break your code. Well done! You win1"
+     puts "\nThe computer could not break your code. Well done! You win!"
     end
 
 
