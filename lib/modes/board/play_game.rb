@@ -5,7 +5,17 @@ module PlayGame
 
     game_rounds.each do |n|
       play_code_round n
+      if self.winner == true
+        break
+      end
     end
+
+    if self.winner == true
+     puts "The computer successfully broke your code! Better luck next time!"
+    else
+     puts "The computer could not break your code. Well done! You win1"
+    end
+
 
     #play_code_round game_rounds[0]
 

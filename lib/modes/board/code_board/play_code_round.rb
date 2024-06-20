@@ -19,10 +19,8 @@ module PlayCodeRound
   end
 
   def play_code_round round
+    # Reduce length so clues can be pushed into array
     round.slice!(0..3)
-    p round
-
-    p self.correct_guesses
 
     # Computer will carry over correct guesses and make random guesses for remainder
     for i in 0..3 do
@@ -50,10 +48,8 @@ module PlayCodeRound
     end
 
      format_data round
-
-     p self.correct_guesses
      self.show_board
+     check_win round
 
-    # Need aditional spots to store data that persists between rounds
   end
 end
