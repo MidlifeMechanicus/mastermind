@@ -5,6 +5,7 @@ class CodeBoard < Board
   def initialize
     super
     @correct_guesses = ["?", "?", "?", "?"]
+    @guesser = "computer"
     puts "this is your code board"
     choose_code
     show_board

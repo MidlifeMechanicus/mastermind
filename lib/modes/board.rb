@@ -23,6 +23,7 @@ class Board
     @code = []
     @code_display = ["?", "?", "?", "?"]
     @turn = 0
+    @guesser
     @winner = false
 
     # show_board
@@ -30,7 +31,7 @@ class Board
   end
   # Need get_choices, get_results and convert_results (map?)
 
-  attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code, :code_display, :turn, :winner
+  attr_accessor :round1, :round2, :round3, :round4, :round5, :round6, :round7, :round8, :round9, :round10, :round11, :round12, :code, :code_display, :turn, :guesser, :winner
 
   include ShowBoard
   include GetCode
