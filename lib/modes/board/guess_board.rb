@@ -2,6 +2,7 @@
 require_relative "guess_board/play_guess_round"
 require_relative "guess_board/get_code"
 require_relative "guess_board/get_choices"
+require_relative "guess_board/get_clue"
 
 class GuessBoard < Board
   def initialize
@@ -14,4 +15,5 @@ class GuessBoard < Board
   include PlayGuessRound
   include GetCode
   include GetChoices
+  include GetClue
 end
