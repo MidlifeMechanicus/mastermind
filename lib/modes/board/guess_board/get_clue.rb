@@ -3,7 +3,6 @@ module GetClue
     code_working_copy = self.code.dup
     choices_working_copy = round.dup
     # We must use .dup otherwise choices remains pointing at and modifying the instance variable!
-    p choices_working_copy
     for i in 0..3
       if choices_working_copy[i] == code_working_copy[i]
         round << "w"
@@ -21,10 +20,6 @@ module GetClue
         end
       end
     end
-
-    p round
-    p choices_working_copy
-    p code_working_copy
     round
   end
 end

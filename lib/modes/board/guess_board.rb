@@ -8,7 +8,6 @@ class GuessBoard < Board
   def initialize
     super
     @guesser = "player"
-    puts "this is your guess board"
     show_board
     get_code
   end

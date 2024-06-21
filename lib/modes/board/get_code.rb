@@ -66,5 +66,3 @@ module GetCode
   end
   end
 end
-
-#blue, green, red, yellow, white, black
