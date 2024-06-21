@@ -1,5 +1,6 @@
 require_relative "modes/board"
 require_relative "modes/board/code_board"
+require_relative "modes/board/guess_board"
 
 module GetMode
   def get_mode
@@ -19,11 +20,12 @@ module GetMode
       if response == "guess"
         choice_valid = true
         puts "You selected GUESS."
+        return GuessBoard.new
+        choice = response
       elsif response == "choose"
-      choice_valid = true
-      puts "You selected CHOOSE."
-      new_board = CodeBoard.new
-      p new_board
+        choice_valid = true
+        puts "You selected CHOOSE."
+        return CodeBoard.new
       else
         puts "That is not a valid selection. Please try again."
       end
