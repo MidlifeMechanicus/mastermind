@@ -1,5 +1,5 @@
 module FormatData
-  def format_data round
+  def format_data(round)
     round.map! do |entry|
       case entry
       when "r"
@@ -20,8 +20,6 @@ module FormatData
         entry = "\e[38;2;128;128;128m+\e[0m"
       end
     end
-    while round.length <8
-      round << " "
-    end
+    round << " " while round.length < 8
   end
 end

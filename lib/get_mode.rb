@@ -15,7 +15,7 @@ module GetMode
     while choice_valid == false
 
       puts "\nWould you like to GUESS the code or the CHOOSE the code?"
-      
+
       response = gets.chomp.downcase
       if response == "guess"
         choice_valid = true
