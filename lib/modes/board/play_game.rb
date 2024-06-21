@@ -22,7 +22,20 @@ module PlayGame
     end
 # 
     if self.guesser == "player"
-      play_guess_round game_rounds[1]
+      game_rounds.each do |n|
+        play_guess_round n
+        if self.winner == true
+          break
+        end
+      end
+      self.code_display = self.code
+      format_data self.code_display
+      self.show_board
+      if self.winner == true
+        puts "\nCongratulations! You have successfully broken the code!"
+      else
+        puts "\nUnfortunately, you did not break the code. Better luck next time!"
+      end
     end
 
 

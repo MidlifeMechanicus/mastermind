@@ -12,12 +12,17 @@ module PlayGuessRound
     p round
     p 'this is round after get choices'
 
-    code_working_copy = self.code.dup
-    choices_working_copy = round
+    get_clue round
+    # move to guessboard folder
 
-    p code_working_copy
-    p choices_working_copy
+    p round
+    p 'this is round after get clue'
 
+    format_data round
+
+    self.show_board
+
+    check_win round
   
 
 
